@@ -3,53 +3,161 @@
 <head> 
 	<title> Welcome to your MediCalendar </title> 
 
-
-
-
-
-	<style type="text/css">
-		h1{
-			color:white
-		}
-		@media screen and (max-width: 2000px) {
-			body {
-				background-color: white;
-			}
-		}
-		.calendar-container{
-
-			border:20px solid black; 
-			height:600px; 
-			width: 1200px; 
-
-		}
-
-	
-
-
-
-	
-
-
-
-	</style>
-
 </head> 
-
-
-
-
 
 <body> 
 
-	<h1 style="color:black;">       Welcome to your Calendar     </h1> 
+	<h1 style="color:blue;" >   Welcome to your Calendar     </h1> 
 
 
-			<p style="text-align:center;" >  
+			<p style="font-size:160%;">  
 			 In this calendar you will monitor your medication uses and you will keep inventory of the medications you are on , this will help you plan out your medication uses and provide information on some of the medications commonly prescribed. In case you are feeling strange or in need of assistance.
 			</p>
 
 
-<div class="calendar-container">  </div> 
+<style>
+* {box-sizing:border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana,sans-serif;}
+
+.month {
+    padding: 100px 25px;
+    width: 100%;
+    background:#FF4500;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background:#F5F5F5;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 7px;
+    font-size:15px;
+    color: #E9967A;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: red !important
+}
+
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+</head>
+<body>
+
+<div class="month">
+  <ul>
+
+    <li style="text-align:center">
+       July 2016 <br>
+      <span style= "font-size:20px"> </span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Monday</li>
+  <li>Tuesday</li>
+  <li>Wednessday</li>
+  <li>Thursday</li>
+  <li>Friday</li>
+  <li>Saturday</li>
+  <li>Sunday</li>
+</ul>
+
+<ul class="days">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+</ul>
+
+</body>
+</html>
+
+
+
+
+
 
   
