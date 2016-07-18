@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
- <!-- Include meta tag to ensure proper rendering and touch zooming -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Include jQuery Mobile style sheets -->
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<!-- Include the jQuery library -->
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<!-- Include the jQuery Mobile library -->
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- Include the jQuery library -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
- <body>
+<body>
 <style>
  
   #pageone .ui-content{
        font-family: Monaco;
-        text-align: center; 
-        background-color: #99d6ff;
+        text-align: center;
       }
         
         
@@ -33,40 +32,26 @@
 
 </head>
 
-
-
-
 <div data-role="page" id="pageone">
-  <div data-role="panel" id="myPanel">
-    <h2>Welcome to the Medication Page</h2>
-    <p>You can close this panel by clicking outside the panel </p>
-    <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left">Home Button</a>
-     <a href="#" class="ui-btn ui-icon-heart ui-btn-icon-left">Symptom Button</a>
-    <button class="ui-btn ui-icon-calendar ui-btn-icon-left">Calendar Button</button>
-    <button class="ui-btn ui-icon-mail ui-btn-icon-left">Mail Button</button>
-  </div>
-
   <div data-role="header">
-    <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left">Home Button</a>
-    <h1> Medication page</h1>
-    <a href="#" class="ui-btn ui-icon-heart ui-btn-icon-left">Symptoms</a>
+<a href="#" class="ui-btn ui-icon-home ui-btn-icon-left"style="color:#99d6ff";>Home Button</a>
+  <h1 style="background-color:#99d6ff;">Welcome to the Medication Page</h1>
+<a href="#" class="ui-btn ui-icon-heart ui-btn-icon-left" style="color:#99d6ff";>Symptoms</a>
     
   </div>
 
-  <div data-role="main" class="ui-content">
-    <p>Click on the button below to open the Panel.</p>
-    <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Panel</a>
-  </div>
+  
 
   <div data-role="footer">
-    <h1 >Enter the medication you are taking at what time in the day. </h1>
-    <textarea name="text" cols="125" rows="30">List your medication ...</textarea>
+  <h1 style="background-color:#99d6ff;">Enter the medication you are taking at what time in the day.</h1>
+<textarea name="text" cols="125" rows="30">List your medication ...</textarea>
     <a href="#" class="ui-btn ui-icon-check ui-btn-icon-left">Submit</a>
   </div>
 </div>
 
 </body>
 </html>
+
 
 	
 
