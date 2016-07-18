@@ -1,66 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Medication</title>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- Include the jQuery library -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-		<!-- Include meta tag to ensure proper rendering and touch zooming -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<style>
+ 
+  #pageone .ui-content{
+       font-family: Monaco;
+        text-align: center;
+      }
+        
+        
+    textarea {
+        font-size: 16px;
+        padding: 10px;
+      }
+    
+    p {
+      color: black;
+    }
 
-		<!-- Include jQuery Mobile stylesheets -->
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-
-		<!-- Include the jQuery library -->
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-		<!-- Include the jQuery Mobile library -->
-		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      </style> 
 
 </head>
 
+<div data-role="page" id="pageone">
+  <div data-role="header">
+<a href="#" class="ui-btn ui-icon-home ui-btn-icon-left"style="color:#99d6ff";>Home Button</a>
+  <h1 style="background-color:#99d6ff;">Welcome to the Medication Page</h1>
+<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-heart" style="color:#99d6ff " onclick="window.location='medication.html';"; >Symptoms</button>
 
-<body>
+    
+  </div>
 
-	<div data-role="page" id= "firstPage" > 
+  
 
-	<div data-role="header">
-	<h1> Medication </h1>
-	<a href="index.html" date-role="button" data-icon= "home" ; style="color:#99d6ff "; >Home</a>
-	<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-heart" style="color:#99d6ff " onclick="window.location='symptoms.html';"; >Symptoms</button>
-
-	</div>
-		<style>
-			#firstPage .ui-content {
-			  	 
-			  font-family: Monaco;
-			  text-align: center;
-			  background-color:#99d6ff;
-			  	
-		textarea {
-			font-size: 16px;
-			padding: 10px; 
-		}
-		
-			p {
-			  color: black;
-			  	}
-			  }
-
-</style>
-	
-	<div data-role="main" class="ui-content">
-	<h1>Enter the medication you are taking at what time in the day.</h1>
-	<textarea name="text" cols="125" rows="30"> List your medication... </textarea>
-	 
+  <div data-role="footer">
+  <h1 style="background-color:#99d6ff;">Enter the medication you are taking at what time in the day.</h1>
+<textarea name="text" cols="125" rows="30">List your medication ...</textarea>
+    <a href="#" class="ui-btn ui-icon-check ui-btn-icon-left">Submit</a>
+  </div>
 </div>
-			   
-<!-- footer --> 
-	<div data-role="footer">
-	<h1> Medication </h1>
-	</div>
-
-		</div>	
-
-	
 
 </body>
 </html>
+
+
+
