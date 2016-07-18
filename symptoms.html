@@ -2,38 +2,79 @@
 <html>
 <head>
 	<title>Symptoms</title>
-	<style>
-	body {
-		font-family: Monaco;
-		text-align: center;
-		background-color:#99d6ff;
-	}
-	textarea {
-		font-size: 16px;
-		padding: 10px;
+	
 
-	}
+	<title>JQuery Tutorial</title>
+		<!-- Include meta tag to ensure proper rendering and touch zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	p {
-		color: black;
-	}
-	</style>
+		<!-- Include jQuery Mobile stylesheets -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+		<!-- Include the jQuery library -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+		<!-- Include the jQuery Mobile library -->
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 </head>
 
 
 <body>
-	<h1>What symptoms are you feeling today?</h1>
+	<!-- Symptoms Page -->
+		
+		<div data-role="page" id= "firstPage" > 
+
+			<div data-role="header">
+			    <h1> SYMPTOMS </h1>
+				<a href="index.html" date-role="button" data-icon= "home" ; style="color:#99d6ff "; >Home</a>
+				<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-heart" style="color:#99d6ff "; >Medication</button>
+
+			  </div>
+			  <style>
+			  #firstPage .ui-content {
+			  	 
+			  		font-family: Monaco;
+			  		text-align: center;
+			  		background-color:#99d6ff;
+			  	
+			  	textarea {
+			  		font-size: 16px;
+			  		padding: 10px;
+
+			  	}
+
+			  	p {
+			  		color: black;
+			  	}
+			  }
+			  
+			  </style>
+
+			  <!-- ALL THE MEAT -->
+			  <div data-role="main" class="ui-content">
+			      <h1>What symptoms are you feeling today?</h1>
 	<p> Here you can make a list to record any unusual symptoms you are ever feeling while on your medication. If you have any werid aches, pains or moods record it here so you can tell your doctor in the next visit. </p>
 
 	<textarea name="text" cols="125" rows="30">
 		List your symptoms ...
 	</textarea>
-</body>
-</html>>
-	<p> Here you can make a list to record any unusual symptoms you are ever feeling while on your medication. If you have any werid aches, pains or moods record it here so you can tell your doctor in the next visit. </p>
+	
+			<!-- Links -->
+<p><a href="../" data-ajax="false">To the medication page, no Ajax</a></p>
+<p><a href="http://www.google.com" rel="external">Google</a></p>    
 
-	<textarea name="text" cols="125" rows="30">
-		List your symptoms ...
-	</textarea>
+			    </div>
+			   
+			   <!-- footer --> 
+			   <div data-role="footer">
+			      <h1> SYMPTOMS </h1>
+			    </div>
+			    <a href= ""> </a>
+
+		</div>	
+
+	
+
 </body>
 </html>
