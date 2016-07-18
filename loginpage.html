@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<title> Login Page </title>
+	  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <!-- Include jQuery Mobile stylesheets -->
+	  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	  <!-- Include the jQuery library -->
+	  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	  <!-- Include the jQuery Mobile library -->
+	  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+
+<body>
+
+<!-- Header -->
+
+	<div data-role="page" id="pageone">
+ 	<div data-role="header">
+    <h1> MedDiary </h1>
+
+<!-- Color & Font for Header and Footer -->
+
+<style>
+#pageone .ui-content {
+    font-family: Monaco; 
+    background: #99d6ff;
+}
+
+
+#pageone .ui-content {
+	font-family: Monaco;
+}
+
+#pageone .ui-header {
+	font-family: Monaco;
+}
+
+#pageone .ui-footer {
+	font-family: Monaco;
+}
+
+</style>
+    </div>
+
+<!-- Login Page -->
+
+ <div data-role="main" class="ui-content">
+ <form method="post" action="demoform.asp">
+ <div class="ui-field-contain">
+	<label for="fullname"> Username: </label>
+	<input type="text" name="name" id="name">
+	<label for="password"> Password: </label>
+	<input type="password" name="password" id="password" autocomplete="off">
+</div>
+	<input type="submit" data-inline="true" value="Submit">
+	
+
+</form>
+
+<!-- Footer -->
+
+  <div data-role="footer" data-position="fixed">
+  <h1> MedDiary </h1>
+  </div>
+
+
+</div>
+
+</body>
+</html>
