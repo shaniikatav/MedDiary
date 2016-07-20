@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-<title> Login Page </title>
+<title> MedDiary </title>
 	  <!-- Include meta tag to ensure proper rendering and touch zooming -->
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <!-- Include jQuery Mobile stylesheets -->
@@ -14,34 +14,28 @@
 
 <body>
 
-<!-- Header -->
-
+		<!-- Header -->
 	<div data-role="page" id="pageone">
  	<div data-role="header">
     <h1> MedDiary </h1>
 
 <!-- Color & Font for Header and Footer -->
+	<style>
+	#pageone .ui-content {
+	    font-family: Monaco; 
+	    background: #99d6ff;
+	}
 
-<style>
-#pageone .ui-content {
-    font-family: Monaco; 
-    background: #99d6ff;
-}
 
+	#pageone .ui-header {
+		font-family: Monaco;
+	}
 
-#pageone .ui-content {
-	font-family: Monaco;
-}
+	#pageone .ui-footer {
+		font-family: Monaco;
+	}
 
-#pageone .ui-header {
-	font-family: Monaco;
-}
-
-#pageone .ui-footer {
-	font-family: Monaco;
-}
-
-</style>
+	</style>
     </div>
 
 <!-- Login Page -->
@@ -54,14 +48,26 @@
 	<label for="password"> Password: </label>
 	<input type="password" name="password" id="password" autocomplete="off">
 </div>
-	<input type="submit" data-inline="true" value="Submit">
+		<!-- Submit Button -->
+	<div id="custom-border-radius"></div>
+	<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-btn-icon-notext" onclick="window.location='medicalender.html'"></a>
 	
+
+	<div data-role="controlgroup" data-type="vertical">
+
+		<!-- Sign Up Button -->
+	<a href="#" class="ui-btn ui-mini" onclick="window.location='signupaccount.html'" class="ui-btn ui-corner-all">Sign Up</a>
+
+		<!-- Forgot Password Button -->
+	<a href="#" class="ui-btn ui-mini" onclick="window.location='forgotpassword.html'" class="ui-btn ui-corner-all">Forgot Password?</a>
+
+</div>
+</div>
 
 </form>
 
-<!-- Footer -->
-
-  <div data-role="footer" data-position="fixed">
+	<!-- Footer -->
+  <div data-role="footer" >
   <h1> MedDiary </h1>
   </div>
 
@@ -70,3 +76,5 @@
 
 </body>
 </html>
+
+
