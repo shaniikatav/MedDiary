@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Medication</title>
-	
+  <title>Medication</title>
+  
 
-	<title>JQuery Tutorial</title>
-		<!-- Include meta tag to ensure proper rendering and touch zooming -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JQuery Tutorial</title>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Include jQuery Mobile stylesheets -->
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 
-		<!-- Include the jQuery library -->
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-		<!-- Include the jQuery Mobile library -->
-		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+ <style>
+ #firstPage  {
+           
+            font-family: Monaco;
+            text-align: center;
+            background-color:#99d6ff;
+          
+          textarea {
+            font-size: 16px;
+            padding: 10px;
+          }
+          p {
+            color: black;
+          }
+        }
+        
+        []
+        </style>
 
 </head>
 
 
 <body>
-	<!-- Symptoms Page -->
-		
-		<div data-role="page" id= "firstPage" > 
+  <!-- Symptoms Page -->
+    
+    <div data-role="page" id= "firstPage" > 
 
-			<div data-role="header">
-			    <h1 style="font-family: Monaco;"> Medication </h1>
-				<a href="index.html" date-role="button" data-icon= "home" ; style="color:#99d6ff " onclick= "window.location= 'home.html' ;" ; >Home</a>
-				<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-heart" style="color:#99d6ff " onclick="window.location='Symptoms.html';"; >Symptoms</button>
+      <div data-role="header">
+          <h1 style="font-family: Monaco;"> Medication </h1>
+        <a href="index.html" date-role="button" data-icon= "home" ; style="color:#99d6ff " onclick= "window.location= 'home.html' ;" ; >Home</a>
+        <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-heart" style="color:#99d6ff " onclick="window.location='Symptoms.html';"; >Symptoms</button>
 
 
-			  </div>
-			  <style>
-			  #firstPage .ui-content {
-			  	 
-			  		font-family: Monaco;
-			  		text-align: center;
-			  		background-color:#99d6ff;
-			  	
-			  	textarea {
-			  		font-size: 16px;
-			  		padding: 10px;
-			  	}
-			  	p {
-			  		color: black;
-			  	}
-			  }
-			  
-			  []
-			  </style>
+        </div>
+        
+       
+        <!-- ALL THE MEAT -->
+        <div data-role="main" class="ui-content">
+            <h1>What Medication Are Taking This Month? </h1>
+                   <p> Here you can make a list of all the medication you are taking.You can also put the day and the time you should take your medication.</p>
 
-			  <!-- ALL THE MEAT -->
-			  <div data-role="main" class="ui-content">
-			      <h1>What Medication Are Taking This Month? </h1>
-	                 <p> Here you can make a list of all the medication you are taking.You can also put the day and the time you should take your medication.</p>
+  <textarea name="text" cols="125" rows="30"> List your Medication... </textarea>
+   
 
-	<textarea name="text" cols="125" rows="30"> List your Medication... </textarea>
-	 
+          </div>
+         
+         <!-- footer --> 
+         <div data-role="footer">
+            <h1 style="font-family: Monaco;"> Medication </h1>
+          </div>
+          <a href= ""> </a>
 
-			    </div>
-			   
-			   <!-- footer --> 
-			   <div data-role="footer">
-			      <h1 style="font-family: Monaco;"> Medication </h1>
-			    </div>
-			    <a href= ""> </a>
+    </div>  
 
-		</div>	
-
-	
+  
 
 </body>
+</html>
+          
 </html>
 			  	
 			  
