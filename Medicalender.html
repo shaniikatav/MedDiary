@@ -1,155 +1,66 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-  <title> Welcome to your MediCalendar </title> 
-  <style>
-  * {box-sizing:border-box;}
-  ul {list-style-type: none;}
-  body {font-family: Monaco;
-       text-align:center;
-       background-color:#99d6ff;
-     }    
-  .month {
-    padding: 25px 20px;
-    width: 100%;
-    background:#ff99ff;
-  }
-  .month ul {
-    margin: 0;
-    padding: 0;
-  }
-  .month ul li {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-  }
-  .weekdays {
-    margin: 0;
-    padding: 10px 0;
-    background-color: #ddd;
-  }/*
-  <!-- weekdays bar -- > */
-  .weekdays li {
-    display: inline-block;
-    width: 13.6%;
-    color: #ff99ff;
-    text-align: center;
-  }
-  .days {
-    padding: 10px 0;
-    background:#F5F5F5;
-    margin: 0;
-  }
-  .days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 13.6%;
-    text-align: center;
-    margin-bottom: 7px;
-    font-size:15px;
-    color: #ff99ff;
-  }
-  }
-  @media screen and (max-width:720px) {
-    .weekdays li, .days li {width: 13.1%;}
-  }
-  @media screen and (max-width: 420px) {
-    .weekdays li, .days li {width: 12.5%;}
-    .days li, .active {padding: 2px;}
-  }
-  @media screen and (max-width: 720px) {
-    .weekdays li, .days li {width: 9%;}
-  }
-  </style>
+  
+<title> Welcome to your MediCalendar </title> 
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+       body {
+          font-family: Monaco;
+          text-align:center;
+          color: #99d6ff;
+       } 
+        #firstPage {
+           
+            font-family: Monaco;
+            text-align: center;
+            background-color:#99d6ff;
+          
+          textarea {
+            font-size: 16px;
+            padding: 10px;
+          }
+          p {
+            color: black;
+          }
+        }
+        </style>
+
 </head> 
 
 <body>
-  <div data-role="page" id= "firstPage" > 
+  <div data-role="page" id="firstPage" > 
 
       <div data-role="header">
           <h1> MedDiary </h1>
-          <a href="index.html" date-role="button" data-icon= "home" ; style="color:#99d6ff " onclick= "window.location= 'home.html' ;" >Home</a>
-          <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-heart" style="color:#99d6ff " onclick="window.location='medication.html';"; >Medication</button>
+        <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-heart" style="color:#99d6ff " onclick="window.location='medication.html';"; >Medication</button>
           <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-heart" style="color:#99d6ff " onclick="window.location='symptoms.html';"; >Symptoms</button> 
       </div>
   <center>
-
- 
   <p style="font-size:160%;">  
        In this calendar you will monitor your medication uses and you will keep inventory of the medications you are on. his will help you plan out your medication uses and provide information on some of the medications commonly prescribed. In case you are feeling strange or in need of assistance.
   </p> </center>
+  <!-- footer --> 
+<div data-role="footer" class="footer-text">
+   <h1> MedDiary </h1>
+ </div>
+ <a href=""> </a>
   </div>
 
 
-<div class="month">
-  <ul>
-
-    <li style="text-align:center">
-       July 2016 
-      
-    </li>
-  </ul>
-</div>
-<!-- day's of the week --> 
-
-<ul class="weekdays">
-  <li>Monday</li>
-
-  <li>Tuesday</li>
-
-  <li>Wednessday</li>
-
-  <li>Thursday</li>
-
-  <li>Friday</li>
-
-  <li>Saturday</li>
-
-  <li>Sunday</li>
-</ul>
-
-<ul class="days">
-
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-  <li>10</li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>15</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>22</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
-
-</ul>
 </body>
 </html>
  
 
-</ul>
+
+
