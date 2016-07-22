@@ -31,8 +31,6 @@
     <h1> Create an Account </h1>
 
 <!-- Color & Font for Header and Footer -->
-
-
     </div>
 
 <!-- Create an Account Page -->
@@ -40,26 +38,28 @@
 
  <div data-role="main" class="ui-content">
  <form method="post" action="demoform.asp">
- <div class="ui-field-contain">
- 	<label for="email"> Name: </label>
-	<input type="email" name="email" id="email" autocomplete="off">
- 	<label for="email"> Email: </label>
-	<input type="email" name="email" id="email" autocomplete="off">
-	<label for="fullname"> Username: </label>
-	<input type="text" name="name" id="name">
-	<label for="password"> Password: </label>
-	<input type="password" name="password" id="password" autocomplete="off">
+ <div style= "width: 500px; height:500px; margin-left: auto ; margin-right: auto">
+ 	 	<label for="First Name"></label>
+		<input type="text" name="text-1" id="FirstName" value= "" placeholder= "First Name" style="text-align:center;" autocomplete="off">
+ 	 	<label for="Last Name">  </label>
+		<input type="text" name="text-2" id="LastName" value= "" placeholder= "Last Name" style="text-align:center;" autocomplete="off">
+ 		<label for="email">  </label>
+
+		<input type="email" name="email" id="email" placeholder= "Email" style="text-align:center;" autocomplete="off">
+		<label for="username"> </label>
+		<input type="text" name="text-3" id="Username" placeholder= "Username" style="text-align:center;" autocomplete="off">
+		<label for= "password" </label>
+		<input type="text" name="text-4" id="Password" placeholder= "Password" style="text-align:center;" autocomplete= "off"> 
+		<button class="ui-btn ui-mini" style= "width: 100px; height:50px; margin-left: auto ; margin-right: auto" onclick="window.location='home.html' " > Submit </button>
 </div>
-	<button class="ui-btn ui-shadow ui-corner-left ui-btn-icon-left" onclick="window.location='medicalender.html';";> Submit </button>
+	
+	
 
 </form>
 
 
-</div>
+
+
 
 </body>
 </html>
-
-
-
-
