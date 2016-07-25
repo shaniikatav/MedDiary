@@ -1,71 +1,114 @@
 <!DOCTYPE html>
 <html>
-	<head>
-<title> MedDiary </title>
-	  <!-- Include meta tag to ensure proper rendering and touch zooming -->
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <!-- Include jQuery Mobile stylesheets -->
-	  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-	  <!-- Include the jQuery library -->
-	  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	  <!-- Include the jQuery Mobile library -->
-	  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<head>
+  <title>Medication</title>
+  
 
-	  <style>
-		#pageone {
-		    font-family: Monaco; 
-		    background: #99d6ff;
-		    text-align: center;
-	}
-		#pageone .ui-header {
-			font-family: Monaco;
-			text-align: center;
-	}
-	
-	</style>
-	</head>
+  <title>JQuery Tutorial</title>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+   <script type="text/javascript" >
+   $(document).ready(function () {
+    $('button').click(function () {
+        $('#todo').append("<ul>" + $("input[name=task]").val() + " <a href='#' class='close' aria-hidden='true'>&times;</a></ul>");
+
+        $("input[name=task]").val('');
+    });
+
+    $("body").on('click', '#todo a', function () {
+        $(this).closest("ul").remove();
+    });
+});
+
+   </script> 
+
+ <style>
+ #firstPage  {
+            
+      form {
+          display: inline-block;
+      }
+      .form-group {
+          text-align: center;
+          padding-bottom: 25px;
+      }
+      #todo {
+          margin: 0 auto;
+          width: 500px;
+      }
+
+      a.close {
+        float: right;
+      }
+            font-family: Monaco;
+            text-align: center;
+            background-color:#99d6ff;
+          
+          textarea {
+            font-size: 16px;
+            padding: 10px;
+          }
+          p {
+            color: black;
+          }
+        }
+        
+        []
+        </style>
+
+</head>
+
 
 <body>
+  <!-- Symptoms Page -->
+    
+    <div data-role="page" id= "firstPage" > 
 
-		<!-- Header -->
-	<div data-role="page" id="pageone">
- 	<div data-role="header">
-    	<h1> MedDiary </h1>
-    </div>
-
-<!-- Color & Font for Header and Footer -->
-
-<!-- Login Page -->
-
- <div data-role="main" class="ui-content">
- <form method="post" action="demoform.asp">
- <div class="ui-field-contain">
- 	<center><div class="login" style= "width:500px; height:500px;">
- 	    	<label for="textinput-2"></label>
- 				<input type="text" name="textinput-1" id="userName" placeholder="Username" style="text-align: center;"value="">
- 				<label for="textinput-2"></label>
- 				<input type="text" name="textinput-2" id="Password" placeholder="Password"  style="text-align: center;" value="">
- 				<a href="#" class="ui-btn ui-mini" onclick="window.location='Home.html'" ;>Login</a>
- 					<!-- Sign Up Button -->
- 				<a href="#" class="ui-btn ui-mini" onclick="window.location='signupaccount.html'" class="ui-btn ui-corner-all" onclick="window.location='signupaccount.html.html';" ;>Create an Account</a>
-
- 					<!-- Forgot Password Button -->
- 				<a href="#" class="ui-btn ui-mini" onclick="window.location='forgot pass.html'" class="ui-btn ui-corner-all">Forgot Password?</a>
-	</div></center>
-		
-	<script type="text/javascript" src="http://bpmaker.giffy.me/userdata/user/54/54797/2/parts.js"></script>
-
-</div>
-</div>
-
-</form>
+      <div data-role="header">
+          <h1 style="font-family: Monaco;"> Medication </h1>
+        <a href="index.html" date-role="button" data-icon= "home" ; style="color:#99d6ff " onclick= "window.location= 'home.html' ;" ; >Home</a>
+        <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-heart" style="color:#99d6ff " onclick="window.location='Symptoms.html';"; >Symptoms</button>
 
 
+        </div>
+        
+       
+        <!-- ALL THE MEAT -->
+        <div data-role="main" class="ui-content">
+            <h1>What Medication Are Taking This Month? </h1>
+                   <p> Here you should list the medication you take and the corresponding time and days you take the medication. This will allow you to keep track of what days a week you need to take each medicine. </p>
 
+   
+  <div class="form-group">
+        
+      <form role="form">
+          <input type="text" class="form-control" placeholder="Your Medication" name="task" style="text-align: center;">
+      </form>
+      <center><div class="login" style= "width:100px; height:100px;">
+      <button type="button" class="ui-btn ui-mini">Add</button>
+          </div>
+          <div></div>
+      <ul class="list-unstyled" id="todo"></ul>
+          </div>
 
-</div>
-</div>
+         
+         
+
+    </div>  
+
+  
 
 </body>
 </html>
-
+          
