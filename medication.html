@@ -16,9 +16,37 @@
 
     <!-- Include the jQuery Mobile library -->
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+   <script type="text/javascript" >
+   $(document).ready(function () {
+    $('button').click(function () {
+        $('#todo').append("<ul>" + $("input[name=task]").val() + " <a href='#' class='close' aria-hidden='true'>&times;</a></ul>");
+    });
+    $("body").on('click', '#todo a', function () {
+        $(this).closest("ul").remove();
+    });
+});
+
+   </script> 
+
  <style>
  #firstPage  {
-           
+            
+      form {
+          display: inline-block;
+      }
+      .form-group {
+          text-align: center;
+          padding-bottom: 25px;
+      }
+      #todo {
+          margin: 0 auto;
+          width: 500px;
+      }
+
+      a.close {
+        float: right;
+      }
             font-family: Monaco;
             text-align: center;
             background-color:#99d6ff;
@@ -55,12 +83,20 @@
         <!-- ALL THE MEAT -->
         <div data-role="main" class="ui-content">
             <h1>What Medication Are Taking This Month? </h1>
-                   <p> Here you can make a list of all the medication you are taking.You can also put the day and the time you should take your medication.</p>
+                   <p> Here you should list the medication you take and the corresponding time and days you take the medication. This will allow you to keep track of what days a week you need to take each medicine. </p>
 
-  <textarea name="text" cols="125" rows="30"> List your Medication... </textarea>
    
-
+  <div class="form-group">
+        
+      <form role="form">
+          <input type="text" class="form-control" placeholder="Your Medication" name="task">
+      </form>
+      <button type="button" class="btn btn btn-primary">Add</button>
           </div>
+          <div></div>
+      <ul class="list-unstyled" id="todo"></ul>
+          </div>
+
          
          
 
@@ -70,4 +106,5 @@
 
 </body>
 </html>
+          
           
