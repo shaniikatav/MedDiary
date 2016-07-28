@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  
+<title> MedDiary </title> 
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	
+<style>
+#pageone  {
+    font-family: times new roman; 
+    background: #99d6ff;
+    font-size: 19px;
+}
+#pageone.ui-header {
+	font-family: times new roman;
+	text-align: center;
+	
+}
+
+#medicationButton{
+	height: 300px;
+	width: 600px; 
+	position: relative;
+	margin-left: 100px;
+}
+
+#symptomsButton{
+ 	height: 285px;
+ 	width: 355px;
+ 	position: relative;
+
+}
+
+#calendarButton{
+	position: absolute;	
+	height: 285px;
+	width: 355px;
+  	bottom: -280px;
+
+  	margin-right: auto;
+  	margin-left: auto;
+  	left: 0px;
+  	right: 0px;
+
+}
+
+#signoutButton {
+    position: fixed;
+    bottom: 15px;
+    right: 80px; 
+}
+
+</style>
+	</head>
+
+<body>
+
+<!-- Header -->
+
+	<div data-role="page" id="pageone">
+ 		<div data-role="header">
+    		<h1> Home Page </h1>
+		</div>
+
+		<div class="ui-field-contain">
+			 
+			 <img align="left" src="medicationbutton.png" id="medicationButton" alt="Medication" onclick="window.location='medication.html'">
+
+			 <img src="symptomsbutton.png" id="symptomsButton" alt="Symptoms" onclick="window.location='symptoms.html'">
+
+			 <img src="calendar.png" id="calendarButton" alt="Calendar" onclick="window.location='medicalendar.html'">
+
+
+		</div>
+
+			<a href="#" class="ui-btn" id="signoutButton"onclick="window.location='loginpage.html'" ;>Sign Out</a>
+
+
+
+  	</div>
+</body>
+</html>
