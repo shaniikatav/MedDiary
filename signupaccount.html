@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-<title> MedDiary </title>
+<title> Create an Account</title>
 	  <!-- Include meta tag to ensure proper rendering and touch zooming -->
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <!-- Include jQuery Mobile stylesheets -->
@@ -10,61 +10,60 @@
 	  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	  <!-- Include the jQuery Mobile library -->
 	  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
-	  <style>
-		#pageone {
-		    font-family: Monaco; 
-		    background: #99d6ff;
-		    text-align: center;
-	}
-		#pageone .ui-header {
-			font-family: Monaco;
-			text-align: center;
-	}
 	
-	</style>
+<style>
+#pageone  {
+    font-family: Monaco; 
+    background: #99d6ff;
+}
+#pageone .ui-header {
+	font-family: Monaco;
+}
+</style>
 	</head>
 
 <body>
 
-		<!-- Header -->
+<!-- Header -->
+
 	<div data-role="page" id="pageone">
- 	<div data-role="header">
-    	<h1> MedDiary </h1>
-    </div>
+ 	<div >
+    <h1 style= "text-align: center;
+      font-size: 60px; font-family: Digital Kauno; margin:0; padding-top:5px;"> Create an Account </h1>
 
 <!-- Color & Font for Header and Footer -->
+    </div>
 
-<!-- Login Page -->
+<!-- Create an Account Page -->
+	<!-- Email -->
 
  <div data-role="main" class="ui-content">
  <form method="post" action="demoform.asp">
- <div class="ui-field-contain">
- 	<center><div class="login" style= "width:500px; height:500px;">
- 	    	<label for="textinput-2"></label>
- 				<input type="text" name="textinput-1" id="userName" placeholder="Username" style="text-align: center;"value="">
- 				<label for="textinput-2"></label>
- 				<input type="text" name="textinput-2" id="Password" placeholder="Password"  style="text-align: center;" value="">
- 				<a href="#" class="ui-btn ui-mini" onclick="window.location='Home.html'" ;>Login</a>
- 					<!-- Sign Up Button -->
- 				<a href="#" class="ui-btn ui-mini" onclick="window.location='signupaccount.html'" class="ui-btn ui-corner-all" onclick="window.location='signupaccount.html.html';" ;>Create an Account</a>
+ <div style= "width: 500px; height:500px; margin-left: auto ; margin-right: auto">
+ 	 	<label for="First Name"></label>
+		<input type="text" name="text-1" id="FirstName" value= "" placeholder= "First Name" style="text-align:center;" autocomplete="off">
+ 	 	<label for="Last Name">  </label>
+		<input type="text" name="text-2" id="LastName" value= "" placeholder= "Last Name" style="text-align:center;" autocomplete="off">
+ 		<label for="email">  </label>
 
- 					<!-- Forgot Password Button -->
- 				<a href="#" class="ui-btn ui-mini" onclick="window.location='forgot pass.html'" class="ui-btn ui-corner-all">Forgot Password?</a>
-	</div></center>
-		
+		<input type="email" name="email" id="email" placeholder= "Email" style="text-align:center;" autocomplete="off">
+		<label for="username"> </label>
+		<input type="text" name="text-3" id="Username" placeholder= "Username" style="text-align:center;" autocomplete="off">
+		<label for= "password" </label>
+		<input type="text" name="text-4" id="Password" placeholder= "Password" style="text-align:center;" autocomplete= "off"> 
+		<button class="ui-btn ui-mini" style= "width: 100px; height:50px; margin-left: auto ; margin-right: auto" onclick="window.location='home.html' " > Submit </button>
+</div>
 	
-
-</div>
-</div>
+	
 
 </form>
 
 
 
 
-</div>
-</div>
 
 </body>
 </html>
+
+
+
