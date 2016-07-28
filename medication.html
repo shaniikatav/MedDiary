@@ -22,15 +22,19 @@
    $(document).ready(function () {
     $('button').click(function () {
         $('#todo').append("<ul>" + $("input[name=task]").val() + " <a href='#' class='close' aria-hidden='true'>&times;</a></ul>");
+
+        $("input[name=task]").val('');
     });
+
     $("body").on('click', '#todo a', function () {
         $(this).closest("ul").remove();
     });
 });
+
    </script> 
 
  <style>
- #firstPage  {
+ #MedicationPage  {
             
       form {
           display: inline-block;
@@ -43,10 +47,12 @@
           margin: 0 auto;
           width: 500px;
       }
+
+
       a.close {
         float: right;
       }
-            font-family: Monaco;
+            font-family: times;
             text-align: center;
             background-color:#99d6ff;
           
@@ -68,20 +74,16 @@
 <body>
   <!-- Symptoms Page -->
     
-    <div data-role="page" id= "firstPage" > 
-
-      <div data-role="header">
-          <h1 style="font-family: Monaco;"> Medication </h1>
-        <a href="index.html" date-role="button" data-icon= "home" ; style="color:#99d6ff " onclick= "window.location= 'home.html' ;" ; >Home</a>
-        <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-heart" style="color:#99d6ff " onclick="window.location='Symptoms.html';"; >Symptoms</button>
-
-
-        </div>
+    <div data-role="page" id= "MedicationPage" > 
+          <a href="#" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-arrow-l" style="color:#99d6ff; width:50px;height:20px;">Back</a>
+          <h1 style="text-align: center;
+      font-size: 60px; font-family: Digital Kauno; margin:0; padding-top:0px; "> Medication </h1>
+         
         
        
         <!-- ALL THE MEAT -->
         <div data-role="main" class="ui-content">
-            <h1>What Medication Are You Taking This Month? </h1>
+            <h1>What Medication Are Taking This Month? </h1>
                    <p> Here you should list the medication you take and the corresponding time and days you take the medication. This will allow you to keep track of what days a week you need to take each medicine. </p>
 
    
@@ -106,6 +108,4 @@
 
 </body>
 </html>
-
-
-
+          
