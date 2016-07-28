@@ -22,18 +22,20 @@
   text-align:center;
   color: #99d6ff;
 } 
-#firstPage {
+#CalendarPage {
    
-    font-family: Monaco;
+    font-family: times;
     text-align: center;
     background-color:#99d6ff;
-  
-  textarea {
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px;
   }
   p {
     color: black;
+  }
+  #CalendarBackButton{
+    color:#99d6ff;
+
   }
 }
 </style>
@@ -41,12 +43,20 @@
 
 <body>
   
-   <div data-role="page" id="firstPage" > 
-    <div data-role="header">
-      <h1> MedDiary </h1>
-      <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-heart" style="color:#99d6ff " onclick="window.location='medication.html';"; >Medication</button>
-       <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-heart" style="color:#99d6ff " onclick="window.location='symptoms.html';"; >Symptoms</button> 
-    </div>
+   <div data-role="page" id="CalendarPage" >
+      <a href="#" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-arrow-l" style="color:#99d6ff; width:50px;height:20px;">Back</a>
+      <h1 style="font-family: Digital Kauno;
+      text-align: center;
+      font-size: 60px; margin:0; padding-top:0px;"> MedDiary 
+
+    </h1>
+   
+
+
+
+
+
+
     <p style="font-size45%;">  
       In this calendar you will monitor the days and times you need to take your medication. This will make sure you always remember to take all your medication!
     </p>
@@ -59,3 +69,6 @@
 
 </body>
 </html>
+
+
+
